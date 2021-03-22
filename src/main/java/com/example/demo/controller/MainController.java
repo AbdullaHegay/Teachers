@@ -7,15 +7,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-<<<<<<< HEAD
 @RequestMapping(MainController.API_URL)
 public class MainController {
     public static final String API_URL = "/api/main";
-=======
-@RequestMapping(MainController.URL_MAIN)
-public class MainController {
-    public static final String URL_MAIN = "/api/main";
->>>>>>> 84395d9c2567c2d92133964fbc7101827bd9d766
     private final MainService mainService;
 
     public MainController(MainService mainService) {
