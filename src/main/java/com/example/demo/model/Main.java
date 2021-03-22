@@ -8,70 +8,50 @@ public class Main {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String brand;
-    private String model;
-    private String description;
-    private int year;
-    private double price;
+    private String fullname;
+    private String subject;
+    private int classes;
 
     public Main() {
     }
 
-    public Main(String brand, String model, String description, int year, double price) {
+    public Main(String fullname, String subject, int classes) {
         this.id = id;
-        this.price = price;
-        this.brand = brand;
-        this.model = model;
-        this.description = description;
-        this.year = year;
+        this.fullname = fullname;
+        this.subject = subject;
+        this.classes = classes;
     }
 
     public Long getId() {
         return id;
     }
 
-    public double getPrice() {
-        return price;
+    public String getFullname() {
+        return fullname;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public String getSubject() {
+        return subject;
     }
 
-    public String getBrand() {
-        return brand;
-    }
-
-    public String getModel() {
-        return model;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public int getYear() {
-        return year;
+    public int getClasses() {
+        return classes;
     }
 
     public void setId(Long id) {
         this.id = id;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
     }
 
-    public void setModel(String model) {
-        this.model = model;
+    public void setSubject(String subject) {
+        this.subject = subject;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public void setYear(int year) {
-        this.year = year;
+    public void setClasses(int classes) {
+        this.classes = classes;
     }
 
 }

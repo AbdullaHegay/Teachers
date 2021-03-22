@@ -39,11 +39,9 @@ public class MainServiceImpl implements MainService {
 
         return mainRepository.findById(id)
                 .map(main -> {
-                    main.setBrand(c.getBrand());
-                    main.setModel(c.getModel());
-                    main.setDescription(c.getDescription());
-                    main.setYear(c.getYear());
-                    main.setPrice(c.getPrice());
+                    main.setFullname(c.getFullname());
+                    main.setSubject(c.getSubject());
+                    main.setClasses(c.getClasses());
                     return mainRepository.save(main);
                 })
                 .orElseGet(() -> {
