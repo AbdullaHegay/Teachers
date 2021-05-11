@@ -1,0 +1,30 @@
+GET information about all teachers
+https://abdulla-midterm.herokuapp.com/api/main
+
+GET teacher by id
+https://abdulla-midterm.herokuapp.com/api/main/{id}
+
+POST
+https://abdulla-midterm.herokuapp.com/api/main/create
+in body enter teacher information like the following example without id
+{
+     "fullname": "Ruslan Isaev",
+    
+     "subject": "Web Technologies",
+    
+     "classes": 5,
+}
+
+PUT
+https://abdulla-midterm.herokuapp.com/api/main/update/{id}
+in body enter computer information like the following example without id
+{
+     "fullname": "Ruslan Isaev",
+    
+     "subject": "Java - Backend",
+    
+     "classes": 5,
+}
+
+DELETE
+https://abdulla-midterm.herokuapp.com/api/main/delete/{id}
